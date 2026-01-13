@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Portafolio María José Rivera</title>
+    <meta
+      name="description"
+      content="Portafolio de diseño con proyectos, servicios y formulario de contacto."
+    />
+    <meta name="theme-color" content="#0b0e14" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body class="page">
+    <svg class="u-visually-hidden" aria-hidden="true" focusable="false">
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path
+          d="M4 6h16M4 12h16M4 18h16"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path
+          d="M6 6l12 12M18 6L6 18"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path
+          d="M5 12h12M13 6l6 6-6 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path
+          d="M4 6h16v12H4z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M4 7l8 6 8-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linejoin="round"
+        />
+      </symbol>
+    </svg>
+
+    <!--profe agregue este pedazo de codigo para mejorar la accesibilidad y ganar puntuacion en lighthouse :)-->
+    <a class="skip-link" href="#main" title="Saltar al contenido principal"
+      >Saltar al contenido</a
+    >
+
+    <!--seccion de cabecera  -->
+    <header class="site-header" id="top">
+      <div class="container site-header__inner">
+        <a class="brand" href="#top" title="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true">◎</span>
+          <span class="brand__text">MJR.DESIGN</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <!-- menu de hamburguesa -->
+          <button
+            class="button button--ghost nav__toggle"
+            type="button"
+            title="Abrir o cerrar el menú"
+            aria-controls="nav-panel"
+            aria-expanded="false"
+            data-menu-toggle
+          >
+            <span class="button__icon" aria-hidden="true">
+              <svg class="icon" width="24" height="24">
+                <use href="#icon-menu"></use>
+              </svg>
+            </span>
+            <span class="button__text">Menú</span>
+          </button>
+
+          <div class="nav__panel" id="nav-panel" data-menu-panel>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#proyectos" title="Ir a proyectos"
+                  >Proyectos</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#servicios" title="Ir a servicios"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#sobre-mi" title="Ir a sobre mí"
+                  >Sobre mí</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#galeria" title="Ir a galería"
+                  >Galería</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contacto" title="Ir a contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+
+            <div class="nav__cta">
+              <a
+                class="button button--primary"
+                href="https://www.behance.net/mjrmdesign/projects"
+                title="Abrir Behance en una pestaña nueva"
+                target="_blank"
+                rel=" noreferrer"
+              >
+                <span class="button__text">Behance</span>
+                <span class="button__icon" aria-hidden="true">
+                  <svg class="icon" width="20" height="20">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main" id="main">
+      <!--Sección1 hero -->
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <h1 class="hero__title" id="hero-title">
+              Hola! Soy Maria josé Rivera, Diseñadora Gráfica
+            </h1>
+
+            <div
+              class="hero__actions"
+              role="group"
+              aria-label="Acciones principales"
+            >
+              <a
+                class="button button--primary"
+                href="#proyectos"
+                title="Ver proyectos"
+              >
+                <span class="button__text">Ver proyectos</span>
+                <span class="button__icon" aria-hidden="true">
+                  <svg class="icon" width="20" height="20">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+
+              <a
+                class="button button--ghost"
+                href="#contacto"
+                title="Ir a contacto"
+              >
+                <span class="button__icon" aria-hidden="true">
+                  <svg class="icon" width="20" height="20">
+                    <use href="#icon-mail"></use>
+                  </svg>
+                </span>
+                <span class="button__text">Contactar</span>
+              </a>
+            </div>
+
+            <ul class="meta-list" aria-label="Especialidades">
+              <li class="meta-list__item">Branding</li>
+              <li class="meta-list__item">Animación y producción de video</li>
+              <li class="meta-list__item">Diseño Editorial</li>
+              <li class="meta-list__item">Ilustraciónl</li>
+              <li class="meta-list__item">Gestion de redes sociales</li>
+              <li class="meta-list__item">Packaging</li>
+              <li class="meta-list__item">Motion Graphics</li>
+              <li class="meta-list__item">Modelado 3D</li>
+              <li class="meta-list__item">Infografías</li>
+              <li class="meta-list__item">Diseño Web</li>
+            </ul>
+          </div>
+
+          <div class="hero__media" role="region" aria-label="Imagen destacada">
+            <picture class="media">
+              <source srcset="assets/img/me/me.webp" type="image/webp" />
+              <source srcset="assets/img/me/me.jpg" type="image/jpeg" />
+              <img
+                class="media__img"
+                src="assets/img/hero.jpg"
+                width="1200"
+                height="900"
+                alt="Retrato diseñadora mjr"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección proyectos-->
+      <section class="section" id="proyectos" aria-labelledby="projects-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="projects-title">Proyectos</h2>
+            <p class="section__subtitle">
+              proyectos mas recientes en los que he trabajado.
+            </p>
+          </header>
+
+          <ul class="cards" data-reveal-group>
+            <li class="cards__item">
+              <article class="card" data-project data-project-id="brand">
+                <header class="card__header">
+                  <h3 class="card__title">Identidad para marca INDRA</h3>
+                  <p class="card__meta">Branding</p>
+                </header>
+
+                <picture class="media card__media">
+                  <source
+                    srcset="assets/img/indra/indra2.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="assets/img/indra/indra2.webp"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="media__img"
+                    src="assets/img/indra/indra2.webp"
+                    width="1200"
+                    height="800"
+                    alt="Mockup de identidad visual con tarjetas y paleta de color"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="card__text">
+                  Logotipo, tipografía, paleta y aplicaciones básicas con foco
+                  en legibilidad.
+                </p>
+
+                <button
+                  class="button button--ghost card__button"
+                  type="button"
+                  title="Abrir detalle del proyecto"
+                >
+                  <span class="button__text">Ver detalle</span>
+                  <span class="button__icon" aria-hidden="true">
+                    <svg class="icon" width="20" height="20">
+                      <use href="#icon-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+              </article>
+            </li>
+
+            <li class="cards__item">
+              <article class="card" data-project data-project-id="ui">
+                <header class="card__header">
+                  <h3 class="card__title">Logotipo para AG</h3>
+                  <p class="card__meta">Branding</p>
+                </header>
+
+                <picture class="media card__media">
+                  <source srcset="assets/img/ag/ag2.webp" type="image/webp" />
+                  <source srcset="assets/img/ag/ag2.webp" type="image/jpeg" />
+                  <img
+                    class="media__img"
+                    src="assets/img/ag/ag2.webp"
+                    width="1200"
+                    height="800"
+                    alt="Pantallas de interfaz para una aplicación de eventos"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="card__text">Diseño de marca AG</p>
+
+                <button
+                  class="button button--ghost card__button"
+                  type="button"
+                  title="Abrir detalle del proyecto"
+                >
+                  <span class="button__text">Ver detalle</span>
+                  <span class="button__icon" aria-hidden="true">
+                    <svg class="icon" width="20" height="20">
+                      <use href="#icon-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+              </article>
+            </li>
+
+            <li class="cards__item">
+              <article class="card" data-project data-project-id="editorial">
+                <header class="card__header">
+                  <h3 class="card__title">YAYOI KUSAMA</h3>
+                  <p class="card__meta">
+                    Taller de Proyectos Editoriales Libro de Arte Yayoi Kusama
+                  </p>
+                </header>
+
+                <picture class="media card__media">
+                  <source
+                    srcset="assets/img/yayoi_kusama/elartedelaobsesion.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="assets/img/yayoi_kusama/elartedelaobsesion.webp"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="media__img"
+                    src="assets/img/yayoi_kusama/elartedelaobsesion.webp"
+                    width="1200"
+                    height="800"
+                    alt="Doble página con retícula y jerarquía tipográfica libro Yayoi Kusama"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="card__text">Redefiniendo a Yayoi Kusama.</p>
+
+                <button
+                  class="button button--ghost card__button"
+                  type="button"
+                  title="Abrir detalle del proyecto"
+                >
+                  <span class="button__text">Ver detalle</span>
+                  <span class="button__icon" aria-hidden="true">
+                    <svg class="icon" width="20" height="20">
+                      <use href="#icon-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Sección servicios-->
+      <section
+        class="section section--muted"
+        id="servicios"
+        aria-labelledby="services-title"
+      >
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="services-title">Servicios</h2>
+            <p class="section__subtitle">
+              Me enfoco en diseño limpio y funcional, con entregables listos
+              para usar (redes, impresión y video).
+            </p>
+          </header>
+
+          <div class="service-grid" data-reveal-group>
+            <article class="service">
+              <h3 class="service__title">Identidad de marca</h3>
+              <p class="section__subtitle">
+                Armo la base visual para que tu marca se vea coherente en todos
+                lados.
+              </p>
+              <ul class="service__list">
+                <li class="service__item">
+                  - Logotipo + versiones (color/ negro/ blanco)
+                </li>
+                <li class="service__item">- Paleta de colores + tipografías</li>
+                <li class="service__item">
+                  - Aplicaciones básicas (tarjeta, firma, portada)
+                </li>
+              </ul>
+            </article>
+
+            <article class="service">
+              <h3 class="service__title">Contenido para redes</h3>
+              <p class="section__subtitle">
+                Te dejo plantillas y piezas para que publiques sin improvisar.
+              </p>
+              <ul class="service__list">
+                <li class="service__item">- Pack de posts + stories</li>
+                <li class="service__item">Plantillas editables</li>
+                <li class="service__item">Estilo visual para el feed</li>
+              </ul>
+            </article>
+
+            <article class="service">
+              <h3 class="service__title">Motion / Video</h3>
+              <p class="section__subtitle">
+                Edición simple y motion graphics para que tus videos se vean más
+                profesionales.
+              </p>
+              <ul class="service__list">
+                <li class="service__item">Edición de video corta</li>
+                <li class="service__item">Animaciones de texto / subtítulos</li>
+                <li class="service__item">Export listo para redes</li>
+                <li class="service__item">Export listo para redes</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección sobre mí -->
+      <section class="section" id="sobre-mi" aria-labelledby="about-title">
+        <div class="container about" data-reveal-group>
+          <header class="section__header">
+            <h2 class="section__title" id="about-title">Sobre mí</h2>
+            <p class="section__subtitle">
+              Algo que tienes que saber sobre mi es que soy una apasionada por
+              el arte.
+            </p>
+          </header>
+
+          <div class="about__grid">
+            <picture class="media about__media">
+              <source srcset="assets/img/me/me.webp" type="image/webp" />
+              <source srcset="assets/img/me/me.jpg" type="image/jpeg" />
+              <img
+                class="media__img"
+                src="assets/img/retrato.jpg"
+                width="900"
+                height="900"
+                alt="Retrato diseñadora mjr"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="about__text">
+              <p>
+                Mi enfoque se centra en el diseño consciente como herramienta de
+                cambio, buscando generar un impacto positivo que mejore la
+                calidad de vida. Mi valor diferencial reside en mis habilidades
+                artísticas, que me permiten abordar proyectos de forma
+                multidisciplinar, combinando lo digital y lo analógico con una
+                visión creativa que trasciende lo puramente estético.
+              </p>
+
+              <div
+                class="about__links"
+                role="group"
+                aria-label="Enlaces externos"
+              >
+                <a
+                  class="button button--ghost"
+                  href="https://www.instagram.com/mjr.arte/"
+                  title="Abrir INSTAGRAM en una pestaña nueva"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span class="button__text">Instagram</span>
+                  <span class="button__icon" aria-hidden="true">
+                    <svg class="icon" width="20" height="20">
+                      <use href="#icon-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a
+                  class="button button--ghost"
+                  href="https://www.linkedin.com/in/mar%C3%ADa-jos%C3%A9-rivera-921718223/"
+                  title="Abrir linkedin en una pestaña nueva"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span class="button__text">Linkedin</span>
+                  <span class="button__icon" aria-hidden="true">
+                    <svg class="icon" width="20" height="20">
+                      <use href="#icon-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+
+                <a
+                  class="button button--ghost"
+                  href="https://marriverama08c.myportfolio.com/work"
+                  title="Abrir portafolio en una pestaña nueva"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span class="button__text">Portafolio</span>
+                  <span class="button__icon" aria-hidden="true">
+                    <svg class="icon" width="20" height="20">
+                      <use href="#icon-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Sección carrusel-->
+      <section class="section" id="galeria" aria-labelledby="carousel-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="carousel-title">Galería</h2>
+            <p class="section__subtitle">
+              Este es un pequeño recorrido por algunos de mis side-proyects, mis
+              obras mas significativas, por que si, en mi tiempo libre me dedico
+              a esto. te dejo una pequeña muestra.
+            </p>
+          </header>
+          <!-- TUVE QUE PONER role="region" porque me daba un error de W3C del area-label -->
+          <div
+            role="region"
+            class="carousel"
+            data-carousel
+            aria-roledescription="carousel"
+            aria-label="Carrusel de obras"
+          >
+            <div class="carousel__viewport" data-carousel-viewport>
+              <ul class="carousel__track" data-carousel-track>
+                <li class="carousel__slide">
+                  <figure class="carousel__figure">
+                    <picture class="media carousel__media">
+                      <source
+                        srcset="assets/img/myart/img1.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="assets/img/myart/img1.jpg"
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="media__img"
+                        src="assets/img/myart/img1.jpg"
+                        width="1600"
+                        height="1000"
+                        alt="Obra abstracta con textura y color"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                    <figcaption class="carousel__caption">
+                      <h3 class="carousel__title">La última</h3>
+                      <p class="carousel__meta">Digital · 2020</p>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="carousel__slide">
+                  <figure class="carousel__figure">
+                    <picture class="media carousel__media">
+                      <source
+                        srcset="assets/img/myart/img2.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="assets/img/myart/img2.jpg"
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="media__img"
+                        src="assets/img/myart/img2.jpg"
+                        width="1600"
+                        height="1000"
+                        alt="Obra abstracta con textura y color"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                    <figcaption class="carousel__caption">
+                      <h3 class="carousel__title">Retrato a lápiz</h3>
+                      <p class="carousel__meta">2019</p>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="carousel__slide">
+                  <figure class="carousel__figure">
+                    <picture class="media carousel__media">
+                      <source
+                        srcset="assets/img/myart/img3.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="assets/img/myart/img3.jpg"
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="media__img"
+                        src="assets/img/myart/img3.jpg"
+                        width="1600"
+                        height="1000"
+                        alt="Obra abstracta con textura y color"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                    <figcaption class="carousel__caption">
+                      <h3 class="carousel__title">
+                        Así quedó mi ilustración digital para el concurso de
+                        drmartens chile
+                      </h3>
+                      <p class="carousel__meta">2023</p>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="carousel__slide">
+                  <figure class="carousel__figure">
+                    <picture class="media carousel__media">
+                      <source
+                        srcset="assets/img/myart/img4.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="assets/img/myart/img4.jpg"
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="media__img"
+                        src="assets/img/myart/img4.jpg"
+                        width="1600"
+                        height="1000"
+                        alt="Obra abstracta con textura y color"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                    <figcaption class="carousel__caption">
+                      <h3 class="carousel__title">nudes</h3>
+                      <p class="carousel__meta">Abril · 2021</p>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+
+              <button
+                class="carousel__control carousel__control--prev"
+                type="button"
+                title="Anterior"
+                aria-label="Anterior"
+                data-carousel-prev
+              >
+                <span class="carousel__control-icon" aria-hidden="true">
+                  <svg class="icon" width="22" height="22">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </span>
+              </button>
+
+              <button
+                class="carousel__control carousel__control--next"
+                type="button"
+                title="Siguiente"
+                aria-label="Siguiente"
+                data-carousel-next
+              >
+                <span class="carousel__control-icon" aria-hidden="true">
+                  <svg class="icon" width="22" height="22">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="carousel__footer">
+              <label class="carousel__label" for="carousel-range"
+                >Deslizar</label
+              >
+              <input
+                class="carousel__range"
+                id="carousel-range"
+                type="range"
+                min="0"
+                max="2"
+                step="1"
+                value="0"
+                title="Control deslizante del carrusel"
+                aria-label="Control deslizante del carrusel"
+                data-carousel-range
+              />
+              <span
+                class="carousel__counter"
+                aria-live="polite"
+                data-carousel-counter
+                >1 / 3</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Sección contacto-->
+      <section
+        class="section section--muted"
+        id="contacto"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact" data-reveal-group>
+          <header class="section__header">
+            <h2 class="section__title" id="contact-title">Contacto</h2>
+            <p class="section__subtitle">
+              Si estas interesado en mi trabajo por favor no dudes en ponerte en
+              contacto conmigo.
+            </p>
+          </header>
+
+          <div class="contact__grid">
+            <div class="contact__card">
+              <h3 class="contact__title">
+                Escríbeme, estaré feliz de contactarte!
+              </h3>
+
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <strong>Correo:</strong>mjr.studiodesign@gmail.com
+                </li>
+                <li class="contact__item">
+                  <strong>Actualmente estoy radicada en:</strong> Valencia,
+                  Spain
+                </li>
+              </ul>
+            </div>
+
+            <!-- formulario -->
+
+            <form
+              class="form"
+              action="#"
+              method="post"
+              autocomplete="on"
+              novalidate
+              data-contact-form
+            >
+              <div class="form__row">
+                <label class="form__label" for="name">Nombre</label>
+                <input
+                  class="form__input"
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="email">Email</label>
+                <input
+                  class="form__input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="subject">Asunto</label>
+                <input
+                  class="form__input"
+                  id="subject"
+                  name="subject"
+                  type="text"
+                  required
+                />
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="message">Mensaje</label>
+                <textarea
+                  class="form__textarea"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form__actions">
+                <button
+                  class="button button--primary"
+                  type="submit"
+                  title="Enviar formulario"
+                >
+                  <span class="button__text">Enviar</span>
+                  <span class="button__icon" aria-hidden="true">
+                    <svg class="icon" width="20" height="20">
+                      <use href="#icon-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+
+                <!-- aqui muestro mensajes del formulario -->
+                <p class="form__hint" id="form-hint" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p class="site-footer__text">© <span data-year></span> MJR.DESIGN</p>
+
+        <a
+          class="button button--ghost site-footer__top"
+          href="#top"
+          title="Volver al inicio"
+          >Ir Arriba</a
+        >
+      </div>
+    </footer>
+
+    <!-- modal -->
+    <!-- puse aria-labelledby recurrentemente para la accesibilidad  -->
+
+    <dialog class="modal" data-modal aria-labelledby="modal-title">
+      <div class="modal__inner">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-title">Detalle</h2>
+
+          <button
+            class="button button--ghost modal__close"
+            type="button"
+            title="Cerrar modal"
+            data-modal-close
+          >
+            <span class="button__icon" aria-hidden="true">
+              <svg class="icon" width="24" height="24">
+                <use href="#icon-close"></use>
+              </svg>
+            </span>
+            <span class="button__text">Cerrar</span>
+          </button>
+        </header>
+
+        <img
+          class="media__img"
+          data-modal-img
+          src="assets/img/indra/indra2.webp"
+          width="1200"
+          height="800"
+          alt="Imagen del proyecto"
+          loading="lazy"
+          decoding="async"
+        />
+
+        <div class="modal__body">
+          <p class="modal__text" data-modal-text></p>
+          <ul class="modal__list" role="list" data-modal-list></ul>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
