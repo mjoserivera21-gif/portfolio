@@ -132,7 +132,7 @@ a {
   border: 1px solid var(--border);
   transform: translateY(-200%);
   transition: transform var(--dur-fast) var(--ease);
-  z-index: 999;
+  z-index: 1;
 }
 
 .skip-link:focus-visible {
