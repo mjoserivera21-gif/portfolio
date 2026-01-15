@@ -2,7 +2,7 @@
 (() => {
   "use strict";
 
-  /* cositas del menú */
+  /* menú */
   /* la mayoria de las funciones y clases de este proyecto las puse en inglés por que investigué que se trata de buenas practicas */
   const body = document.body;
   const menuBtn = document.querySelector("[data-menu-toggle]");
@@ -10,7 +10,7 @@
   const navLinks = document.querySelectorAll(".nav__link");
   let isMenuOpen = false;
 
-  /* año del footer */
+  /* año dinamico del footer */
   const yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
@@ -25,7 +25,7 @@
 
   if (menuBtn) menuBtn.addEventListener("click", toggleMenu);
 
-  /* links del menú: ir a sección y cerrar menú en móvil */
+  /* links del menú: ir a sección y cerrar menú en mobile */
   navLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
       const href = link.getAttribute("href") || "";
@@ -62,15 +62,12 @@
     brand: {
       title: "identidad para marca INDRA",
       text: "",
-      list: [
-        "Logotipo con sus variaciones de color",
-        "Paleta de colores y tipografía",
-      ],
+      list: ["Diseño de marca INDRA", "Paleta de colores y tipografía"],
     },
     ui: {
       title: "logotipo para AG Monogram",
       text: "",
-      list: ["Logotipo con sus variaciones de color"],
+      list: ["Logotipopara marca AG con sus variaciones de color"],
     },
     editorial: {
       title: "Yayoi Kusama Book",
